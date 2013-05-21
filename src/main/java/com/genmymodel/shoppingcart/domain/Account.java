@@ -54,8 +54,8 @@ public class Account
 	 * @ordered
 	 */
 	
-	@javax.persistence.OneToOne(mappedBy = "acc")
-	protected Customer customer;
+	@javax.persistence.OneToMany(mappedBy = "account")
+	protected Set<Order> order;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -81,8 +81,8 @@ public class Account
 	 * @ordered
 	 */
 	
-	@javax.persistence.OneToMany(mappedBy = "account")
-	protected Set<Order> order;
+	@javax.persistence.OneToOne(mappedBy = "acc")
+	protected Customer customer;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

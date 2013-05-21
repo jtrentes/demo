@@ -21,6 +21,15 @@ public class Customer
 	 * @ordered
 	 */
 	
+	@javax.persistence.Column(nullable = false)
+	protected String name;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected String address;
 	/**
 	 * <!-- begin-user-doc -->
@@ -44,20 +53,11 @@ public class Customer
 	 * @generated
 	 * @ordered
 	 */
-  
-  protected static final Set<String> VIP_CUSTOMERS = new HashSet<String>() ;
-	
-	@javax.persistence.OneToOne(cascade = javax.persistence.CascadeType.ALL)
-	protected Account acc;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	
 	@javax.persistence.OneToOne(mappedBy = "customer")
 	protected WebUser webuser;
+	@javax.persistence.OneToOne(cascade = javax.persistence.CascadeType.ALL)
+	protected Account acc;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -107,6 +107,16 @@ public class Customer
 		}	
 	}
 	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	public String getName() {
+		return this.name;	
+	}
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -192,6 +202,16 @@ public class Customer
 	 * @generated
 	 * @ordered
 	 */
+	public void setName(String myName) {
+		this.name = myName;	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
 	public void setAddress(String myAddress) {
 		this.address = myAddress;	
 	}
@@ -228,6 +248,16 @@ public class Customer
 			
 	}
 	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	public void unsetName() {
+		this.name = "";	
+	}
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

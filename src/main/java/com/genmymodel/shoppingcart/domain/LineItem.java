@@ -35,7 +35,7 @@ public class LineItem
 	
 	@javax.persistence.ManyToOne
 	@javax.persistence.JoinColumn(nullable = false)
-	protected Product product;
+	protected ShoppinCart sc;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -45,7 +45,7 @@ public class LineItem
 	
 	@javax.persistence.ManyToOne
 	@javax.persistence.JoinColumn(nullable = false)
-	protected ShoppinCart sc;
+	protected Product product;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

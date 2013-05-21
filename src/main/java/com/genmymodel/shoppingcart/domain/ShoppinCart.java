@@ -29,8 +29,8 @@ public class ShoppinCart
 	 * @ordered
 	 */
 	
-	@javax.persistence.OneToOne(mappedBy = "shoppincart")
-	protected WebUser webuser;
+	@javax.persistence.OneToOne
+	protected Account account;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -38,8 +38,8 @@ public class ShoppinCart
 	 * @ordered
 	 */
 	
-	@javax.persistence.OneToOne
-	protected Account account;
+	@javax.persistence.OneToOne(mappedBy = "shoppincart")
+	protected WebUser webuser;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

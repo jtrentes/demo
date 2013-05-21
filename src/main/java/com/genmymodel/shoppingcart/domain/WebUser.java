@@ -43,7 +43,7 @@ public class WebUser
 	 */
 	
 	@javax.persistence.OneToOne
-	protected ShoppinCart shoppincart;
+	protected Customer customer;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -52,7 +52,7 @@ public class WebUser
 	 */
 	
 	@javax.persistence.OneToOne
-	protected Customer customer;
+	protected ShoppinCart shoppincart;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
