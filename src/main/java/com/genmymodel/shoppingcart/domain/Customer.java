@@ -80,13 +80,12 @@ public class Customer
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
 	
 	public boolean isVIP() {
-		// TODO : to implement
-		return false;
+		return VIP_CUSTOMERS.contains(this);
 	}
 	
 	/**
