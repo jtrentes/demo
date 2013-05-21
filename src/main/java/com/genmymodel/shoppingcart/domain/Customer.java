@@ -1,5 +1,8 @@
 package com.genmymodel.shoppingcart.domain;
 
+import java.util.Set;
+import java.util.HashSet;
+
 
 /**
  * <br>
@@ -41,6 +44,8 @@ public class Customer
 	 * @generated
 	 * @ordered
 	 */
+  
+  protected static final Set<String> VIP_CUSTOMERS = new HashSet<String>() ;
 	
 	@javax.persistence.OneToOne(cascade = javax.persistence.CascadeType.ALL)
 	protected Account acc;
@@ -75,12 +80,13 @@ public class Customer
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated NOT
+	 * @generated
 	 * @ordered
 	 */
 	
 	public boolean isVIP() {
-		return this.getWebuser().getLogin().equals("VIP");	
+		// TODO : to implement
+		return false;
 	}
 	
 	/**
