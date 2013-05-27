@@ -81,7 +81,7 @@ public class MyClass2
 	 * @ordered
 	 */
 	
-	public MyClass3 myclass3;
+	public MyInterface myinterface;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -97,7 +97,7 @@ public class MyClass2
 	 * @ordered
 	 */
 	
-	public MyInterface myinterface;
+	public MyClass3 myclass3;
 
 	/**
 	 * <!-- begin-user-doc -->
