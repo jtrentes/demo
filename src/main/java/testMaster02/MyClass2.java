@@ -81,6 +81,14 @@ public class MyClass2
 	 * @ordered
 	 */
 	
+	public MyInterface myinterface;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
 	public MyClass3 myclass3;
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,7 +105,7 @@ public class MyClass2
 	 * @ordered
 	 */
 	
-	public MyInterface myinterface;
+	public MyClass4 myclass4;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -54,6 +54,15 @@ public class MyClass3
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
+	 * @ordered
+	 */
+	
+	public MyInterface myinterface2;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
 	 */
 	public MyClass3(){
 		
